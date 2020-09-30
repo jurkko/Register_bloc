@@ -8,13 +8,30 @@ abstract class RegistrationEvent extends Equatable {
   List<Object> get props => [];
 }
 
-class RegistrationUsernameChanged extends RegistrationEvent {
-  const RegistrationUsernameChanged(this.username);
+class RegistrationEventInitial extends RegistrationEvent {
+  const RegistrationEventInitial();
+  @override
+  List<Object> get props => [];
+}
 
-  final String username;
+
+
+class RegistrationEmailChanged extends RegistrationEvent {
+  const RegistrationEmailChanged(this.email);
+
+  final String email;
 
   @override
-  List<Object> get props => [username];
+  List<Object> get props => [email];
+}
+
+class RegistrationEmailChanged2 extends RegistrationEvent {
+  const RegistrationEmailChanged2(this.email);
+
+  final String email;
+
+  @override
+  List<Object> get props => [email];
 }
 
 class RegistrationPasswordChanged extends RegistrationEvent {
@@ -28,8 +45,19 @@ class RegistrationPasswordChanged extends RegistrationEvent {
 
 class RegistrationSubmitted extends RegistrationEvent {
   const RegistrationSubmitted();
+  @override
+  List<Object> get props => [];
 }
 
-class RegistrationTest extends RegistrationEvent {
-  const RegistrationTest();
+class RegistrationSubmittedPage extends RegistrationEvent {
+  const RegistrationSubmittedPage();
+  @override
+  List<Object> get props => [];
+}
+
+
+class backToRegister extends RegistrationEvent {
+  const backToRegister();
+  @override
+  List<Object> get props => [];
 }

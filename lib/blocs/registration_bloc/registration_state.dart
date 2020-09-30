@@ -16,6 +16,20 @@ class RegistrationTestState extends RegistrationState {
   List<Object> get props =>  [];
 }
 
+class RegistrationTestState2 extends RegistrationState {
+
+  @override
+  // TODO: implement props
+  List<Object> get props =>  [];
+}
+
+class RegistrationTestState3 extends RegistrationState {
+
+  @override
+  // TODO: implement props
+  List<Object> get props =>  [];
+}
+
 class RegistrationSuccessfulState extends RegistrationState {
 
   @override
@@ -29,3 +43,8 @@ class RegistrationUnsuccessfulState extends RegistrationState {
   List<Object> get props =>  [];
 }
 
+class RegistrationFailed extends RegistrationState {
+  @override
+  // TODO: implement props
+  List<Object> get props =>  [];
+}
